@@ -1,0 +1,40 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="MyStyle1.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+</head>
+<body>
+<script>
+function performLogin(){
+var x=document.getElementById("loginid").value;
+console.log(x);
+}
+function verifyId(){
+
+		//$.getJSON("login_list.json", function(json) {
+		//console.log(json);
+		//});
+}
+</script>
+<div id="div1">
+<p style="font-size:20px;">Login here or  <a href="SignUp.html" target="_blank">Sign_Up</a> with us</p>
+<table>
+<tr>
+<td>Enter id</td>
+<td><input type="text" id ="loginid"></td>
+</tr>
+<tr>
+<td>Enter password</td>
+<td><input type="password" id ="loginid"></td>
+</tr>
+<tr><br></tr>
+<tr>
+<td></td>
+<td><button id="logbutton" type = "submit" onclick="performLogin()"><img src="login_img.jpg" /></button></td>
+</tr>
+</table>
+<p id="demo"></p>
+</div>
+
+</body>
+</html>
